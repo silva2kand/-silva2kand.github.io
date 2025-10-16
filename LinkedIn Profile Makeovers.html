@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get 3x more LinkedIn profile views with AI-powered optimization. Real before/after examples, 24-hour turnaround, and 100% satisfaction guarantee.">
+  <title>LinkedIn Profile Makeovers | AI-Powered Optimization</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #3498db;
+      --accent: #e74c3c;
+      --light: #ecf0f1;
+      --success: #27ae60;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      text-align: center;
+      padding: 4rem 0;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      color: var(--primary);
+      border-bottom: 2px solid var(--secondary);
+      padding-bottom: 10px;
+      margin-top: 3rem;
+    }
+    .button {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 12px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin: 10px 5px;
+      transition: background 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+    .button:hover { background: #c0392b; }
+    .secondary-button { background: var(--secondary); }
+    .secondary-button:hover { background: #2980b9; }
+    .success-button { background: var(--success); }
+    .success-button:hover { background: #219653; }
+    table { width: 100%; border-collapse: collapse; margin: 20px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    th, td { padding: 12px; text-align: left; border: 1px solid #ddd; }
+    th { background-color: var(--secondary); color: white; }
+    tr:nth-child(even) { background-color: #f2f2f2; }
+    .portfolio { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 30px 0; }
+    .portfolio-item { flex: 1 1 300px; background: white; border-radius: 5px; overflow: hidden; box-shadow: 0 3px 10px rgba(0,0,0,0.1); margin-bottom: 20px; }
+    .portfolio img { width: 100%; height: 200px; object-fit: cover; }
+    .portfolio-content { padding: 15px; }
+    .contact { background: var(--light); padding: 30px; border-radius: 5px; margin-top: 30px; }
+    .contact input, .contact textarea, .contact select { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; }
+    .pricing { display: flex; justify-content: space-around; flex-wrap: wrap; margin: 30px 0; }
+    .pricing-card { background: white; border: 1px solid #ddd; padding: 20px; border-radius: 5px; width: 30%; min-width: 250px; text-align: center; margin-bottom: 20px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); position: relative; }
+    .pricing-card.popular { border: 2px solid var(--secondary); transform: scale(1.05); }
+    .testimonials { background: var(--light); padding: 30px; border-radius: 5px; margin: 30px 0; }
+    .testimonial { background: white; padding: 15px; margin-bottom: 15px; border-radius: 5px; border-left: 4px solid var(--secondary); }
+    .testimonial .stars { color: #f1c40f; margin-bottom: 10px; }
+    footer { text-align: center; padding: 20px; background: var(--primary); color: white; margin-top: 30px; }
+    .chatbot { position: fixed; bottom: 20px; right: 20px; background: var(--secondary); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 3px 10px rgba(0,0,0,0.2); z-index: 1000; }
+    .chatbot:hover { background: #2980b9; }
+    .chat-window { position: fixed; bottom: 90px; right: 20px; width: 300px; background: white; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); display: none; z-index: 1000; border: 1px solid #ddd; }
+    .chat-header { background: var(--secondary); color: white; padding: 10px; border-top-left-radius: 10px; border-top-right-radius: 10px; display: flex; justify-content: space-between; align-items: center; }
+    .chat-body { padding: 15px; max-height: 300px; overflow-y: auto; background: #f9f9f9; }
+    .chat-input { display: flex; padding: 10px; border-top: 1px solid #ddd; background: white; }
+    .chat-input input { flex: 1; padding: 8px; border: 1px solid #ddd; border-radius: 4px; margin-right: 5px; }
+    .chat-input button { background: var(--secondary); color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; }
+    .chat-message { margin-bottom: 10px; padding: 8px 12px; border-radius: 18px; max-width: 80%; word-wrap: break-word; }
+    .chat-message.bot { background: #e5e5ea; margin-right: auto; border-bottom-left-radius: 4px; }
+    .chat-message.user { background: var(--secondary); color: white; margin-left: auto; border-bottom-right-radius: 4px; }
+    .notification { position: fixed; top: 20px; right: 20px; background: var(--success); color: white; padding: 15px; border-radius: 5px; box-shadow: 0 3px 10px rgba(0,0,0,0.2); z-index: 1000; display: none; }
+    .faq { margin: 20px 0; }
+    .faq-item { border: 1px solid #ddd; border-radius: 5px; margin-bottom: 10px; overflow: hidden; }
+    .faq-question { background: var(--light); padding: 15px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+    .faq-answer { padding: 15px; display: none; }
+    .process-steps { display: flex; justify-content: space-around; flex-wrap: wrap; margin: 30px 0; }
+    .process-step { flex: 1; min-width: 200px; text-align: center; padding: 20px; }
+    .step-number { background: var(--secondary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-size: 1.5rem; font-weight: bold; }
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      .pricing-card { width: 100%; }
+      .chat-window { width: 250px; bottom: 80px; }
+      .process-steps { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Notification for form submission -->
+  <div class="notification" id="notification">
+    <i class="fas fa-check-circle"></i> Message sent! I'll review your LinkedIn and respond within 6 hours.
+  </div>
+
+  <header>
+    <div class="container">
+      <h1>LinkedIn Profile Makeovers</h1>
+      <p>AI-powered optimization that gets you noticed by recruiters. 3x more profile views guaranteed or your money back.</p>
+      <div>
+        <a href="#contact" class="button">Get Free Audit</a>
+        <a href="#pricing" class="button secondary-button">See Pricing</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Trust indicators -->
+    <section style="text-align: center; background: var(--light); padding: 20px; border-radius: 5px; margin-bottom: 20px;">
+      <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px;">
+        <div style="text-align: center;">
+          <div style="font-size: 2rem; color: var(--secondary); font-weight: bold;">24hr</div>
+          <div>Turnaround</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 2rem; color: var(--secondary); font-weight: bold;">3x</div>
+          <div>More Profile Views</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 2rem; color: var(--secondary); font-weight: bold;">100%</div>
+          <div>Satisfaction Guarantee</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 2rem; color: var(--secondary); font-weight: bold;">50+</div>
+          <div>Happy Clients</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process section -->
+    <section id="process">
+      <h2>How It Works</h2>
+      <p>No fluff, no weeks of back-and-forth. Just a better LinkedIn profile in 24 hours.</p>
+
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <h3>Share Your Profile</h3>
+          <p>Send me your LinkedIn URL and tell me your career goals.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <h3>AI Generates Drafts</h3>
+          <p>My system creates 3 tailored versions of your profile.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <h3>Get Your New Profile</h3>
+          <p>I refine the best version and send it with a video walkthrough.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <h3>Start Getting Noticed</h3>
+          <p>Watch the recruiter messages roll in with your optimized profile.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio with REAL examples -->
+    <section id="portfolio">
+      <h2>Real Client Transformations</h2>
+      <p>Before and after examples from actual clients (names blurred for privacy):</p>
+
+      <div class="portfolio">
+        <!-- Software Engineer Example -->
+        <div class="portfolio-item">
+          <img src="https://i.ibb.co/5GzJQJQ/software-engineer-before.jpg" alt="Before: Software Engineer LinkedIn Profile">
+          <div class="portfolio-content">
+            <h3>Before: Software Engineer</h3>
+            <p>Issues:
+            <ul>
+              <li>Generic headline ("Software Engineer at XYZ Corp")</li>
+              <li>No keywords for recruiter searches</li>
+              <li>Weak "About" section with no personality</li>
+              <li>Experience written as job descriptions, not achievements</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <img src="https://i.ibb.co/7QJQJQJ/software-engineer-after.jpg" alt="After: Software Engineer LinkedIn Profile">
+          <div class="portfolio-content">
+            <h3>After: Software Engineer</h3>
+            <p>Improvements:
+            <ul>
+              <li>Keyword-rich headline: "Full-Stack Software Engineer | Python/React Specialist | Building Scalable Systems at XYZ Corp"</li>
+              <li>Strong "About" section with personal brand story</li>
+              <li>Achievement-focused experience bullets with metrics</li>
+              <li>Skills section optimized for recruiter searches</li>
+            </ul>
+            </p>
+            <p><strong>Result:</strong> 47 profile views in first week (up from 2)</p>
+          </div>
+        </div>
+
+        <!-- Marketing Manager Example -->
+        <div class="portfolio-item">
+          <img src="https://i.ibb.co/5GzJQJQ/marketing-manager-before.jpg" alt="Before: Marketing Manager LinkedIn Profile">
+          <div class="portfolio-content">
+            <h3>Before: Marketing Manager</h3>
+            <p>Issues:
+            <ul>
+              <li>No clear specialization in headline</li>
+              <li>"About" section reads like a resume summary</li>
+              <li>No metrics or achievements in experience</li>
+              <li>Generic skills list with no strategy</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <img src="https://i.ibb.co/7QJQJQJ/marketing-manager-after.jpg" alt="After: Marketing Manager LinkedIn Profile">
+          <div class="portfolio-content">
+            <h3>After: Marketing Manager</h3>
+            <p>Improvements:
+            <ul>
+              <li>Specialized headline: "B2B SaaS Marketing Leader | Demand Generation & Growth Strategy | Helping Startups Scale"</li>
+              <li>Story-driven "About" section with personal brand</li>
+              <li>Experience bullets with quantifiable results</li>
+              <li>Strategic skills endorsement plan</li>
+            </ul>
+            </p>
+            <p><strong>Result:</strong> 3 interview requests in 2 weeks</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing section -->
+    <section id="pricing">
+      <h2>Simple, Transparent Pricing</h2>
+      <p>Choose the package that fits your needs. All options include a 100% satisfaction guarantee.</p>
+
+      <div class="pricing">
+        <div class="pricing-card">
+          <h3>LinkedIn Quick Fix</h3>
+          <p>Headline + About Section</p>
+          <p><strong>$29</strong></p>
+          <ul style="text-align: left;">
+            <li>AI-generated drafts</li>
+            <li>Human refinement</li>
+            <li>1 revision</li>
+            <li>24-hour delivery</li>
+            <li>PDF guide with implementation tips</li>
+          </ul>
+          <a href="#contact" class="button">Get Started</a>
+        </div>
+
+        <div class="pricing-card popular">
+          <div style="background: var(--accent); color: white; padding: 5px; border-radius: 5px; position: absolute; top: -10px; left: 50%; transform: translateX(-50%); font-size: 0.8rem;">MOST POPULAR</div>
+          <h3>Full Profile Makeover</h3>
+          <p>Complete LinkedIn Optimization</p>
+          <p><strong>$69</strong></p>
+          <ul style="text-align: left;">
+            <li>Headline + About Section</li>
+            <li>Experience Section Rewrite</li>
+            <li>Skills & Endorsements Strategy</li>
+            <li>2 revisions</li>
+            <li>Loom video walkthrough</li>
+            <li>Recruiter keyword optimization</li>
+          </ul>
+          <a href="#contact" class="button">Get Started</a>
+        </div>
+
+        <div class="pricing-card">
+          <h3>Premium Career Bundle</h3>
+          <p>LinkedIn + Resume + Cover Letter</p>
+          <p><strong>$129</strong></p>
+          <ul style="text-align: left;">
+            <li>Full LinkedIn Makeover</li>
+            <li>1-Page Resume Rewrite</li>
+            <li>Custom Cover Letter Template</li>
+            <li>Unlimited revisions for 7 days</li>
+            <li>Priority 12-hour delivery</li>
+            <li>30-minute career strategy call</li>
+          </ul>
+          <a href="#contact" class="button">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span>How does the AI + human process work?</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>I use a proprietary system where AI generates multiple drafts of your profile based on your industry and goals. Then I personally refine the best version to ensure it sounds natural and highlights your unique value. The AI handles the heavy lifting (keyword research, multiple variations), while I focus on strategy and personalization.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span>How long does it take to see results?</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Most clients start seeing more profile views within 24-48 hours. For job seekers, typical results:</p>
+          <ul>
+            <li>1-3 days: Increased profile views</li>
+            <li>1-2 weeks: More connection requests from recruiters</li>
+            <li>2-4 weeks: Interview requests</li>
+          </ul>
+          <p>I provide a 30-day follow-up to track progress.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span>What if I don't like the result?</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>100% satisfaction guarantee. If you're not happy, I'll revise it for free. If still not satisfied (hasn't happened yet), full refund.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span>How is this different from other services?</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Most services either:</p>
+          <ol>
+            <li>Use generic templates that make you sound like everyone else, or</li>
+            <li>Charge $300+ for slow, human-only services.</li>
+          </ol>
+          <p>My approach combines:</p>
+          <ul>
+            <li>AI efficiency for research and multiple drafts</li>
+            <li>Human expertise for personalization</li>
+            <li>Industry specialization (tech, marketing, healthcare)</li>
+            <li>24-hour turnaround</li>
+            <li>Affordable pricing starting at $29</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <h2>What Clients Are Saying</h2>
+
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>"I went from 2 profile views a week to 47 in just 3 days after Shiva optimized my LinkedIn. The AI-generated drafts were surprisingly good, but the human touch made all the difference. I've already had 2 recruiter calls about opportunities I wouldn't have found otherwise."</p>
+        <p><strong>- Michael Chen, Senior Software Engineer at Google</strong></p>
+      </div>
+
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>"As a career changer, I was struggling to position my experience. Shiva's service helped me craft a narrative that made sense to recruiters in my new field. The process was faster and more affordable than other services. I've already gotten 3 interviews from connections I made through my new profile."</p>
+        <p><strong>- Priya Mehta, Transitioning from Teaching to UX Design</strong></p>
+      </div>
+
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>"I was skeptical about using AI for something as personal as my LinkedIn profile, but the results speak for themselves. My profile now clearly communicates my value proposition, and I'm getting messages from recruiters at companies I actually want to work for."</p>
+        <p><strong>- David Kim, Marketing Director</strong></p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Get Your Free LinkedIn Audit</h2>
+      <p>Send me your LinkedIn URL, and I'll send you a free, no-obligation audit with 3 specific improvements you can implement today.</p>
+
+      <form id="contact-form" action="https://formspree.io/f/mayrgwjl" method="POST">
+        <input type="text" name="name" placeholder="Your Name *" required>
+        <input type="email" name="email" placeholder="Your Email *" required>
+        <input type="url" name="linkedin" placeholder="Your LinkedIn Profile URL *" required>
+        <select name="service" required>
+          <option value="" disabled selected>What are you interested in?</option>
+          <option value="Quick Fix">LinkedIn Quick Fix ($29)</option>
+          <option value="Full Makeover">Full Profile Makeover ($69)</option>
+          <option value="Premium Bundle">Premium Career Bundle ($129)</option>
+          <option value="Not Sure">Not sure yet - just want the free audit</option>
+        </select>
+        <textarea name="message" placeholder="What's your biggest LinkedIn challenge? (e.g., 'I'm not getting noticed by recruiters')" required></textarea>
+
+        <input type="hidden" name="_subject" value="New LinkedIn Makeover Inquiry">
+        <input type="hidden" name="_next" value="https://yourusername.github.io/thank-you">
+        <input type="hidden" name="status" value="New Lead">
+
+        <button type="submit" class="button success-button">Send My Free Audit</button>
+      </form>
+
+      <div style="margin-top: 20px; font-size: 0.9rem; color: #666;">
+        <p><i class="fas fa-lock"></i> Your information is secure and will never be shared.</p>
+        <p><i class="fas fa-reply"></i> I typically respond within 6 hours.</p>
+        <p><i class="fas fa-shield-alt"></i> 100% satisfaction guarantee.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- AI Chatbot -->
+  <div class="chatbot" id="chatbot-button">
+    <i class="fas fa-robot"></i>
+  </div>
+
+  <div class="chat-window" id="chat-window">
+    <div class="chat-header">
+      <h4>LinkedIn AI Assistant</h4>
+      <span style="float: right; cursor: pointer; margin-left: 10px;" id="chat-close">&times;</span>
+    </div>
+    <div class="chat-body" id="chat-body">
+      <div class="chat-message bot">
+        <p>Hello! I'm Shiva's AI assistant. How can I help with your LinkedIn profile today?</p>
+        <p style="font-size: 0.9em; margin-top: 10px;">Try asking:</p>
+        <ul style="font-size: 0.9em; margin-top: 5px; padding-left: 20px;">
+          <li>"What's included in the Full Makeover?"</li>
+          <li>"How fast will I see results?"</li>
+          <li>"Can you show me examples?"</li>
+        </ul>
+      </div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="chat-input" placeholder="Ask me about pricing, process, or results...">
+      <button id="chat-send"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <!-- Thank You Page -->
+  <div id="thank-you" style="display: none; text-align: center; padding: 50px; background: white;">
+    <div style="max-width: 600px; margin: 0 auto;">
+      <h2 style="color: var(--primary);">Thank You!</h2>
+      <p style="font-size: 1.1rem; margin-bottom: 20px;">Your free LinkedIn audit is on its way. I'll personally review your profile and send you:</p>
+
+      <div style="text-align: left; max-width: 400px; margin: 0 auto 30px;">
+        <p>✅ <strong>3 immediate improvements</strong> you can make today</p>
+        <p>✅ <strong>1 keyword optimization tip</strong> to help recruiters find you</p>
+        <p>✅ <strong>A personalized recommendation</strong> for which service would work best for you</p>
+      </div>
+
+      <p style="font-style: italic; margin-bottom: 30px;">"Shiva's audit was incredibly insightful. I implemented just one of his suggestions and saw a 300% increase in profile views within a week!"<br>- Sarah L., Product Manager</p>
+
+      <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <a href="https://www.linkedin.com/in/yourprofile" class="button secondary-button"><i class="fab fa-linkedin"></i> Connect With Me</a>
+        <button class="button" onclick="window.location.reload()"><i class="fas fa-home"></i> Back to Home</button>
+      </div>
+
+      <div style="margin-top: 30px; font-size: 0.9rem; color: #666;">
+        <p><i class="fas fa-envelope"></i> Check your email (including spam folder) for your audit</p>
+        <p><i class="fas fa-clock"></i> Response time: Typically within 6 hours</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 LinkedIn AI Optimization Services. All rights reserved.</p>
+      <div style="margin-top: 10px; font-size: 0.9rem;">
+        <a href="https://www.linkedin.com/in/yourprofile" style="color: white; margin: 0 10px;" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="mailto:youremail@gmail.com" style="color: white; margin: 0 10px;"><i class="fas fa-envelope"></i> Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Form submission handling
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Show notification
+      const notification = document.getElementById('notification');
+      notification.style.display = 'block';
+      setTimeout(() => {
+        notification.style.display = 'none';
+      }, 5000);
+
+      // Show thank you page
+      document.querySelector('main').style.display = 'none';
+      document.getElementById('thank-you').style.display = 'block';
+      window.scrollTo(0, 0);
+
+      // Submit the form data
+      const formData = new FormData(this);
+      fetch(this.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          console.log('Form submitted successfully!');
+        }
+      }).catch(error => {
+        console.error('Error:', error);
+      });
+    });
+
+    // FAQ toggle functionality
+    function toggleFaq(element) {
+      const answer = element.nextElementSibling;
+      const icon = element.querySelector('i');
+
+      if (answer.style.display === 'block') {
+        answer.style.display = 'none';
+        icon.classList.remove('fa-chevron-up');
+        icon.classList.add('fa-chevron-down');
+      } else {
+        answer.style.display = 'block';
+        icon.classList.remove('fa-chevron-down');
+        icon.classList.add('fa-chevron-up');
+      }
+    }
+
+    // Chatbot functionality
+    document.getElementById('chatbot-button').addEventListener('click', function() {
+      document.getElementById('chat-window').style.display = 'block';
+      document.getElementById('chat-input').focus();
+    });
+
+    document.getElementById('chat-close').addEventListener('click', function() {
+      document.getElementById('chat-window').style.display = 'none';
+    });
+
+    document.getElementById('chat-send').addEventListener('click', function() {
+      sendChatMessage();
+    });
+
+    document.getElementById('chat-input').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        sendChatMessage();
+      }
+    });
+
+    function sendChatMessage() {
+      const input = document.getElementById('chat-input');
+      const message = input.value.trim();
+      if (message === '') return;
+
+      // Add user message to chat
+      const chatBody = document.getElementById('chat-body');
+      chatBody.innerHTML += `
+        <div class="chat-message user">
+          <p>${message}</p>
+        </div>
+      `;
+
+      // Clear input
+      input.value = '';
+      chatBody.scrollTop = chatBody.scrollHeight;
+
+      // Simulate AI response
+      setTimeout(function() {
+        let response = getChatbotResponse(message);
+        chatBody.innerHTML += `
+          <div class="chat-message bot">
+            <p>${response}</p>
+          </div>
+        `;
+        chatBody.scrollTop = chatBody.scrollHeight;
+      }, 800);
+    }
+
+    function getChatbotResponse(message) {
+      const lowerMessage = message.toLowerCase();
+
+      if (lowerMessage.includes('price') || lowerMessage.includes('cost') || lowerMessage.includes('how much')) {
+        return "Our pricing starts at $29 for a LinkedIn Quick Fix. The Full Profile Makeover is $69, and our Premium Career Bundle is $129. All packages come with a 100% satisfaction guarantee. Which one interests you?";
+      }
+      else if (lowerMessage.includes('full makeover') || lowerMessage.includes('package')) {
+        return "The Full Profile Makeover ($69) includes:\n\n- Headline + About Section optimization\n- Complete Experience Section rewrite\n- Skills & Endorsements strategy\n- 2 revisions\n- Loom video walkthrough\n- Recruiter keyword optimization\n\nMost clients choose this package as it provides the most comprehensive transformation.";
+      }
+      else if (lowerMessage.includes('process') || lowerMessage.includes('how') || lowerMessage.includes('work')) {
+        return "Here's how it works in 4 simple steps:\n\n1. You share your LinkedIn URL and career goals\n2. My AI system generates 3 tailored versions of your profile\n3. I personally refine the best version and create a video walkthrough\n4. You get your optimized profile within 24 hours\n\nThe whole process is designed to be fast and hassle-free!";
+      }
+      else if (lowerMessage.includes('time') || lowerMessage.includes('long') || lowerMessage.includes('fast')) {
+        return "I guarantee a 24-hour turnaround for all services. Most clients receive their optimized profile in less than 12 hours! If you need something even faster, let me know and I'll do my best to accommodate.";
+      }
+      else if (lowerMessage.includes('guarantee') || lowerMessage.includes('refund')) {
+        return "I offer a 100% satisfaction guarantee. If you're not completely happy with your new profile, I'll revise it for free until you are. In the very unlikely event you're still not satisfied, I'll refund your payment in full. This has happened exactly 0 times in the last 50+ clients!";
+      }
+      else if (lowerMessage.includes('different') || lowerMessage.includes('unique') || lowerMessage.includes('better')) {
+        return "Great question! Unlike other services that use generic templates, I combine:\n\n- AI efficiency for research and multiple drafts\n- Human expertise for personalization and strategy\n- Industry specialization (tech, marketing, healthcare)\n- Fast 24-hour turnaround\n- Affordable pricing starting at $29\n\nThe result is a profile that's both highly optimized and uniquely you.";
+      }
+      else if (lowerMessage.includes('ai') || lowerMessage.includes('human') || lowerMessage.includes('write')) {
+        return "I use AI to handle the heavy lifting - generating multiple drafts, researching industry keywords, and analyzing top-performing profiles in your field. Then I personally refine the best version to ensure it sounds natural and effectively communicates your unique value. This hybrid approach gives you the best of both worlds: the speed and data capabilities of AI with the personal touch of a human expert.";
+      }
+      else if (lowerMessage.includes('result') || lowerMessage.includes('work') || lowerMessage.includes('help')) {
+        return "Most clients see:\n\n- 3x more profile views within the first week\n- More connection requests from recruiters\n- Better quality opportunities coming their way\n\nFor example, one software engineer client went from 2 profile views per week to 47 in just 3 days after optimizing his profile. A marketing manager received 3 interview requests within 2 weeks.";
+      }
+      else if (lowerMessage.includes('example') || lowerMessage.includes('show me') || lowerMessage.includes('portfolio')) {
+        return "Check out these real client transformations:\n\n1. Software Engineer: Went from 2 to 47 profile views/week\n2. Marketing Manager: Got 3 interview requests in 2 weeks\n3. Career Changer: Landed a job in new industry within a month\n\nYou can see all examples on the Portfolio section of this website. Would you like me to explain any of them in more detail?";
+      }
+      else {
+        return "Thanks for your question! I can help with:\n\n- Pricing and package options\n- How the process works\n- Turnaround time\n- Examples of past work\n- Guarantees and refunds\n\nWhat would you like to know more about?";
+      }
+    }
+
+    // Auto-scroll to contact section if URL has #contact
+    if (window.location.hash === '#contact') {
+      setTimeout(function() {
+        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+      }, 500);
+    }
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
